@@ -11,6 +11,7 @@ let rooms = [{ rid: 'fake', uid: 'fake' }];
 app.use(bodyParser.json());
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "./templates")));
+app.set("views", __dirname + "/views");
 
 const server = require('http').createServer(app);
 const io = socket(server);
