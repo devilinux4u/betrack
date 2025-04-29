@@ -4,8 +4,9 @@
   "description": "real time tracking app",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "npm run build",
+    "test": "nodemon index.js"
   },
   "author": "solo.linux",
   "license": "ISC",
